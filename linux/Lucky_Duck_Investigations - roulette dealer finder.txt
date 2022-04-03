@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# first argument file name, second argument is time (00:00:00), third argument $
+
+cat $1 | grep $2 | grep $3 | awk '{print $1,$2,$5,$6}'
